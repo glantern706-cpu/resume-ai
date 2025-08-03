@@ -1,6 +1,5 @@
 import os
 import logging
-# from PyPDF2 import PdfReader
 import docx
 import tempfile
 
