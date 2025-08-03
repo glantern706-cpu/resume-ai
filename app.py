@@ -7,7 +7,6 @@ import tempfile
 import json
 
 from resume_analyzer import ResumeAnalyzer
-from file_processor import FileProcessor
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
@@ -29,7 +28,6 @@ app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENGTH
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Initialize components
-file_processor = FileProcessor()
 resume_analyzer = ResumeAnalyzer()
 
 def allowed_file(filename):
