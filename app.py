@@ -75,7 +75,7 @@ def upload_file():
         # Clean up uploaded file
         os.remove(filepath)
         
-        return render_template('results.html', 
+        return render_template("form.html") 
                              analysis=analysis_result, 
                              original_text=extracted_text,
                              filename=filename)
